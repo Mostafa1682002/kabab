@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #eee;
+  font-family: "Cairo", sans-serif;
+  color: #444;
+  height: 200vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #c6a34d;
+  --dark-color: #141414;
+  --main-transition: 0.4s;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--dark-color);
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+a,
+li,
+ul,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+/*Icons*/
+i.icon {
+  font-size: 18px;
+  color: var(--dark-color);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}
+i.icon:hover {
+  color: var(--main-color);
+}
+/*Layout*/
+.layout {
+  position: fixed;
+  z-index: 50;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  inset: 0;
+  pointer-events: none;
+}
+.layout.active {
+  pointer-events: all;
+  opacity: 0.7;
+}
+
+@media (min-width: 992px) {
+  .layout.active {
+    pointer-events: none;
+    opacity: 0;
+  }
+}

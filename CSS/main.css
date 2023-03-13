@@ -6,7 +6,6 @@ body {
   background: #eee;
   font-family: "Cairo", sans-serif;
   color: #444;
-  /* height: 200vh; */
 }
 html {
   scroll-behavior: smooth;
@@ -52,13 +51,27 @@ a,
 li,
 ul,
 p,
-div {
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
   margin: 0;
   padding: 0;
 }
-input:focus {
-  box-shadow: none !important;
-  border-color: transparent !important;
+.form-control {
+  padding: 10px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #d2d8dd;
+}
+.form-control:focus {
+  border-color: #ccc;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 5%);
 }
 /*Icons*/
 i.icon {
@@ -94,29 +107,3 @@ i.icon:hover {
     opacity: 0;
   } */
 }
-
-.container {
-  margin: 0px auto;
-  padding: 10px;
-}
-
-/* @media (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-  }
-} */

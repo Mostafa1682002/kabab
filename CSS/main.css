@@ -6,7 +6,7 @@ body {
   background: #eee;
   font-family: "Cairo", sans-serif;
   color: #444;
-  height: 200vh;
+  /* height: 200vh; */
 }
 html {
   scroll-behavior: smooth;
@@ -89,8 +89,34 @@ i.icon:hover {
 }
 
 @media (min-width: 992px) {
-  .layout.active {
+  /* .layout.active {
     pointer-events: none;
     opacity: 0;
+  } */
+}
+
+.container {
+  margin: 0px auto;
+  padding: 10px;
+}
+
+/* @media (max-width: 767px) {
+  .container {
+    width: 100%;
   }
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+} */

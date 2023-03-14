@@ -207,6 +207,9 @@ header {
   .drop-menu {
     display: block;
   }
+  .logo {
+    width: 140px;
+  }
 }
 @media (max-width: 500px) {
   .nav-bar {
@@ -287,6 +290,7 @@ header {
   width: 100%;
   background-color: #fff;
   border-top: 1px solid #ededed;
+  padding: 10px 0;
   box-shadow: 0px 6px 12px 0px rgb(0 0 0 / 18%);
   position: sticky;
   z-index: 30;
@@ -371,11 +375,8 @@ header {
 .content-products-right .department {
   padding-top: 30px;
 }
-.products
-  .content-products
-  .content-products-right
-  .department
-  .head-department {
+
+.head-department {
   color: var(--dark-color);
   font-size: 23px;
   margin-bottom: 15px;
@@ -423,7 +424,7 @@ header {
   flex-basis: 100%;
 }
 .content-products-right .department .items .item .content-item .text-item h4 {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--dark-color);
   transition: var(--main-transition);
@@ -461,6 +462,9 @@ header {
   font-weight: bold;
   padding-right: 5px;
 }
+.content-products-right .department .items .item .content-item .add-item i {
+  color: var(--main-color);
+}
 
 @media (max-width: 991px) {
   .products .content-products {
@@ -474,3 +478,159 @@ header {
   }
 }
 /* End Products */
+
+/* Start Free coupon */
+.content-taqiem {
+  background-color: #fff;
+  padding: 30px 0;
+  width: 65%;
+}
+.content-taqiem .taqiem {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.content-taqiem .taqiem .box-marg {
+  background-color: var(--green-color);
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 30%;
+}
+.content-taqiem .taqiem .box-marg strong {
+  display: block;
+  font-size: 40px;
+  font-weight: 500;
+}
+.content-taqiem .taqiem .box-marg em,
+.content-taqiem .taqiem .box-marg p {
+  font-size: 15px;
+}
+.content-taqiem .taqiem .parent-box {
+  flex-basis: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.content-taqiem .taqiem .parent-box .box-pagi {
+  width: 50%;
+}
+.content-taqiem .taqiem .parent-box .box-pagi .info-pagi h5 {
+  font-size: 15px;
+  margin: 5px;
+}
+.content-taqiem .taqiem .parent-box .box-pagi .info-pagi .precnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-taqiem .taqiem .parent-box .box-pagi .info-pagi .precnt div {
+  width: 80%;
+  height: 5px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+.content-taqiem .taqiem .parent-box .box-pagi .info-pagi .precnt div span {
+  background-color: var(--green-color);
+  height: 100%;
+  border-radius: 5px;
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.comments {
+  margin: 20px 0;
+  padding: 25px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #ededed;
+}
+.comments .box-comment {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.comments .box-comment .img-person img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.comments .box-comment .img-person h5 {
+  font-size: 13px;
+  margin-top: 15px;
+  white-space: nowrap;
+}
+.comments .box-comment .person-comment {
+  flex-basis: 100%;
+}
+.comments .box-comment .person-comment > div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.comments .box-comment .person-comment > div .date-comment {
+  color: #999;
+  font-size: 14px;
+}
+.comments .box-comment .person-comment > div p {
+  color: #444;
+  font-size: 15px;
+}
+.comments .box-comment .person-comment > div p span {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--green-color);
+}
+.comments .box-comment .person-comment > div p span small {
+  font-size: 17px;
+}
+.comments .box-comment .person-comment h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.comments .box-comment .person-comment p {
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  .content-taqiem {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .content-taqiem .taqiem {
+    flex-direction: column;
+  }
+  .content-taqiem .taqiem .parent-box,
+  .content-taqiem .taqiem .box-marg {
+    width: 100%;
+  }
+  .content-taqiem .taqiem .parent-box .box-pagi {
+    width: 100%;
+  }
+  .content-taqiem .taqiem .parent-box {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .comments .box-comment {
+    flex-direction: column;
+  }
+  .comments .box-comment .img-person {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+  .comments .box-comment .person-comment > div {
+    flex-direction: column;
+  }
+}
+/* End Free coupon */

@@ -116,6 +116,14 @@ header {
   padding: 5px;
   font-size: 15px;
   display: block;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.nav-bar .content-navbar li.drop .child-drop li a:hover {
+  color: var(--main-color);
 }
 .nav-bar .content-navbar > li.drop:hover::before,
 .nav-bar .content-navbar > li.drop:hover .child-drop {

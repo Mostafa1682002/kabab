@@ -356,6 +356,17 @@ header {
 .sticky-nav .content-navsticky li:last-child:hover a {
   color: var(--main-color);
 }
+@media (max-width: 768px) {
+  .sticky-nav {
+    padding: 5px 0;
+  }
+  .sticky-nav .content-navsticky {
+    padding: 5px 0;
+  }
+  .sticky-nav .content-navsticky li a {
+    font-size: 14px;
+  }
+}
 /*  End Sticky Nav */
 /* Start Products */
 .products {
@@ -372,6 +383,13 @@ header {
 }
 .products .content-products .content-products-left {
   width: 30%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  overflow: hidden;
 }
 .products .content-products .content-products-right .img {
   border: 2px solid #ededed;
@@ -382,7 +400,7 @@ header {
   width: 100%;
 }
 .content-products-right .department {
-  padding-top: 30px;
+  padding-top: 70px;
 }
 
 .head-department {
@@ -475,6 +493,20 @@ header {
   color: var(--main-color);
 }
 
+/*Order*/
+.products .content-products .content-products-left .cart {
+  background-color: #fff;
+}
+.products .content-products .content-products-left .head-cart {
+  padding: 15px;
+  background-color: var(--dark-color);
+  color: #fff;
+  font-size: 20px;
+}
+.products .content-products .content-products-left .cart .empty-cart p {
+  margin: 10px 0;
+}
+
 @media (max-width: 991px) {
   .products .content-products {
     flex-direction: column;
@@ -551,7 +583,7 @@ header {
   -o-border-radius: 5px;
 }
 .comments {
-  margin: 20px 0;
+  margin: 30px 0;
   padding: 25px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -643,3 +675,114 @@ header {
   }
 }
 /* End Free coupon */
+/* Start Footer */
+.footer {
+  background-color: #ffe9b2fc;
+  padding: 60px 0;
+}
+.footer .head-links {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer .links .link {
+  padding-bottom: 7px;
+}
+.footer .links .link a {
+  color: var(--dark-color);
+  font-size: 14px;
+  width: fit-content;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  margin-right: 0px;
+}
+.footer .links .link a i {
+  opacity: 0;
+  font-size: 12px;
+  color: var(--dark-color);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.footer .links .link a.to-link:hover {
+  margin-right: -5px;
+}
+.footer .links .link a:hover i {
+  opacity: 1;
+}
+.footer .links .link i.axx {
+  color: var(--main-color);
+  padding-left: 10px;
+}
+.footer .form-foot {
+  display: flex;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+.footer .form-foot input {
+  font-size: 14px;
+  width: 100%;
+  padding: 7px 10px;
+  outline: none;
+  border: none;
+}
+.footer .form-foot button {
+  padding: 0 12px;
+  color: #fff;
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+}
+.footer .social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer .social .social-img {
+  width: 30px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.footer .social .social-img:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+.footer .social .social-img img {
+  width: 100%;
+}
+.under-footer {
+  margin-top: 30px;
+  padding: 30px 0 0;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.under-footer .copy a {
+  color: var(--dark-color);
+  font-size: 14px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.under-footer .copy a:hover {
+  color: #444;
+}

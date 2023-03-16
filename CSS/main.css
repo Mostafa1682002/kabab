@@ -143,3 +143,20 @@ i.icon:hover {
   z-index: 2;
   background-color: var(--main-color);
 }
+.main-btn {
+  color: #fff !important;
+  background-image: linear-gradient(to right, #8b6f2c, #c6a34d);
+  padding: 7px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition); */
+  display: inline-block;
+}
+.main-btn:hover {
+  background-image: linear-gradient(to right, #c6a34d, #c6a34d);
+}
